@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <style media="screen">
+     /*Model B */
+     .signature_wrapper{
+       width: 600px;
+       height: 130px;
+       background-color: #ffffff;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: flex-start;
+     }
+        
+     .signature_header_image{
+       width: 220px;
+       height: 110px;
+       padding-left: 20px;
+       padding-right: 20px;
+       background-image: image-url("btd_logo.png");
+     }
+        
+/*
+     .signature_header_image img{
+       width: 180px;
+       height: 110px;
+     }
+*/
+        
+     .signature_body{
+       width: 380px;
+       height: 110px;
+       padding: 10px 18px;
+     }
+
+     .signature_separator{
+       width: 3px;
+       height: 70%;
+       position: relative;
+       top: 20px;
+       background-color: #ffcc00;
+     }
+        
+     .signature_footer{
+       width: 600px;
+       height: 40px;
+       background-color: #ffcc00;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+     }
+        
+     .footer_empty_block{
+       width: 42%;
+       height: 40px;
+       margin-right: 0px;
+     }
+        
+     .footer_block{
+       width: 58%;
+       height: 40px;
+       display: inherit;
+       align-items: center; 
+     }
+        
+     p{
+        font-family: 'Nanum Gothic', sans-serif;
+        margin: 5px 5px;
+        font-size: 13px;
+      }
+        
+     .name{
+        font-size: 16px;
+        font-weight: bold;
+      }
+    
+     .social{
+        color: #000000;
+        font-size: 20px;
+      }
+        
+     .social i{
+        padding-right: 10px;
+        color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="signature_wrapper">
+      <div class="signature_header_image">
+<!--        <img src="image/btd_logo_v1.png" alt="">-->
+      </div>
+      <div class="signature_separator">
+      </div>
+      <div class="signature_body">
+        <p class="name">구본경</p>
+        <p class="position">대표 | Beyond the Dream</p>
+        <p class="mobile"><i class="fas fa-phone">&nbsp;&nbsp;</i>010-0000-0000</p>
+        <p class="email"><i class="far fa-envelope">&nbsp;&nbsp;</i>btd.bonkyoung@gmail.com</p>
+        <p class="address"><i class="fas fa-location-arrow">&nbsp;&nbsp;</i>서울특별시 금천구 가산디지털1로 82, 204호</p>
+      </div>
+    </div>
+    <div class="signature_footer">
+      <div class="footer_empty_block"></div>
+      <div class="footer_block">
+        <p class="social">
+          <i class="fab fa-facebook-f">&nbsp;</i>
+          <i class="fab fa-instagram">&nbsp;</i>
+          <i class="fab fa-github">&nbsp;</i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
