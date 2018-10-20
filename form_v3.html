@@ -20,27 +20,28 @@
     }
 
     .signature_header_image {
-      width: 220px;
-      height: 110px;
+      width: 200px;
+      height: 150px;
       padding-left: 20px;
       padding-right: 20px;
-      background-image: url("image/btd_logo_v1.png");
       background-size: 220px 140px;
-      position: relative;
-      bottom: 5px;
+      background: #0F2027;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-    /*
-     .signature_header_image img{
-       width: 180px;
-       height: 110px;
-     }
-*/
+    .signature_image {
+      width: 200px;
+      height: 150px;
+    }
 
     .signature_body {
-      width: 380px;
-      height: 110px;
-      padding: 10px 18px;
+      width: 400px;
+      height: 150px;
+      padding: 5px 15px;
     }
 
     .signature_separator {
@@ -74,38 +75,33 @@
 
     }
 
-    .footer_empty_block {
-      width: 42%;
-      height: 40px;
-      margin-right: 0px;
-    }
-
-    .footer_block {
-      width: 58%;
-      height: 40px;
-      display: inherit;
-      align-items: center;
-    }
-
     p {
       font-family: 'Nanum Gothic', sans-serif;
       margin: 5px 5px;
-      font-size: 13px;
+      font-size: 11px;
     }
+
+    .position {
+      margin-bottom: 10px;
+    }
+
+    .address {
+      margin-bottom: 10px;
+    }
+
 
     .name {
       font-size: 16px;
       font-weight: bold;
     }
 
-    .social {
-      color: #000000;
-      font-size: 20px;
+    .email {
+      margin-bottom: 10px;
     }
 
-    .social i {
-      padding-right: 10px;
-      color: #000000;
+    .description {
+      font-size: 10px;
+      color: #808080;
     }
   </style>
 
@@ -114,18 +110,15 @@
 <body>
   <div class="signature_wrapper">
     <div class="signature_header_image">
+      <img src="image/btd_logo_v2.png" class="signature_image">
     </div>
     <div class="signature_body">
       <p class="name">구본경</p>
-      <p class="position">대표 | Beyond the Dream</p>
-      <p class="mobile"><i class="fas fa-phone">&nbsp;&nbsp;</i>010-0000-0000</p>
-      <p class="email"><i class="far fa-envelope">&nbsp;&nbsp;</i>btd.bonkyoung@gmail.com</p>
-      <p class="address"><i class="fas fa-location-arrow">&nbsp;&nbsp;</i>서울특별시 금천구 가산디지털1로 82, 204호</p>
-      <p class="social">
-        <i class="fab fa-facebook-f">&nbsp;</i>
-        <i class="fab fa-instagram">&nbsp;</i>
-        <i class="fab fa-github">&nbsp;</i>
-      </p>    
+      <p class="position">대표</p>
+      <p class="address">서울특별시 금천구 가산디지털1로 82, 204호</p>
+      <p class="mobile">Call: 010-0000-0000</p>
+      <p class="email">Mail: btd.bonkyoung@gmail.com</p>
+      <p class="description">Beyond the Dream에 대한 설명 글 </p>
     </div>
   </div>
 </body>
